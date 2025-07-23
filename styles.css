@@ -69,6 +69,17 @@ nav {
     margin: 0 auto;
 }
 
+.nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--dark);
+    z-index: 1001;
+    position: relative;
+}
+
 .logo {
     font-weight: 700;
     font-size: 1.5rem;
