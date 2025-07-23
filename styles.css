@@ -135,7 +135,9 @@ nav {
 }
 
 .hero-image {
-    flex: 1;
+    flex: 6; /* Further increase the flex ratio to make the image larger */
+    max-width: 100%; /* Ensure it takes up the available space */
+    height: auto; /* Maintain aspect ratio */
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -338,7 +340,23 @@ nav {
     line-height: 1.5;
     margin-bottom: 20px;
 }
+.logo {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
 
+        .logo-icon {
+            width: 4em;
+            height: 4em;
+            margin-right: 10px;
+        }
+
+        .footer-icon {
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+        }
 .quote .author {
     font-size: 1.1rem;
     font-style: italic;

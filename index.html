@@ -9,32 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        .logo-icon {
-            width: 24px;
-            height: 24px;
-            vertical-align: middle;
-        }
-
-        .footer-icon {
-            width: 32px;
-            height: 32px;
-            vertical-align: middle;
-        }
-    </style>
 </head>
 <body>
     <header class="nav-container">
         <nav>
-            <div class="logo">
-                <img src="images/icon.png" alt="DockWidgets Icon" class="logo-icon">
-                DockWidgets
+            <div class="logo" style="display: flex; align-items: center;">
+                <img src="images/icon.png" alt="DockWidgets Icon" class="logo-icon" style="margin-right: 8px;">
+                <span>DockWidgets</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#widgets">Widgets</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#download" class="download-btn">Download</a></li>
+                <li><a href="DockWidgets.zip" class="download-btn" download>Download</a></li>
             </ul>
         </nav>
     </header>
@@ -42,11 +29,10 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Transform Your <span class="highlight">Empty Space</span> into Something Useful</h1>
-            <p>Add beautiful, functional widgets to the unused space beside your macOS dock</p>
-            <a href="#download" class="cta-button">Download Now</a>
         </div>
-        <div class="hero-image">
+        <div>
             <img src="images/before-after.png" alt="Before and after showing empty dock space versus widgets">
+            <p style="margin-top: 10px;">Add beautiful, functional widgets to the unused space beside your macOS dock</p>
         </div>
     </section>
 
@@ -72,7 +58,7 @@
     </section>
 
     <section id="widgets" class="widgets">
-        <h2>Available Widgets</h2>
+        <h2>Widgets</h2>
         
         <div class="widget-showcase">
             <div class="widget-info">
@@ -88,8 +74,8 @@
             <div class="widget-preview flipclock" >
                 <img src="images/flipclock.png" alt="Flip Clock Widget" class="widget-image">
                 <div class="video-container">
-                    <video src="videos/flipclock-animation.mp4" autoplay loop muted>
-                        Your browser does not support the video tag.
+                    <video src="videos/flipclock-animation.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 500px; display: block; margin: 0 auto;">
+                        Your browser does not support the video tag. Please update your browser or try another device.
                     </video>
                 </div>
             </div>
@@ -128,20 +114,10 @@
         </div>
     </section>
 
-    <section class="testimonial">
-        <div class="container">
-            <div class="quote">
-                <i class="fas fa-quote-left"></i>
-                <p>"I never realized how much empty space I had beside my dock until DockWidgets filled it with useful widgets. Now I can't imagine my Mac without it!"</p>
-                <p class="author">— Sarah K., Designer</p>
-            </div>
-        </div>
-    </section>
-
     <section id="download" class="download">
         <h2>Ready to Transform Your Dock?</h2>
-        <p>Available for macOS 11.0 and later</p>
-        <a href="DockWidgets.zip" class="download-button" download>
+        <p>Compatible with macOS 14.6 and later</p>
+        <a href="DockWidgets.app" class="download-button" download>
             <i class="fab fa-apple"></i>
             Download for Mac
         </a>
@@ -154,20 +130,22 @@
         <h2>Frequently Asked Questions</h2>
         <div class="faq-container">
             <div class="faq-item">
-                <h3>Does DockWidgets affect my system performance?</h3>
-                <p>No, DockWidgets is designed to be lightweight and uses minimal system resources. It won't slow down your Mac.</p>
+                <h3>Do I need to grant a lot of permissions?</h3>
+                <p>No, DockWidgets only needs permissions to run scripts to control music playing in Spotify or Apple Music.</p>
             </div>
             <div class="faq-item">
-                <h3>Can I customize the position of the widgets?</h3>
-                <p>Yes, you can arrange widgets in any order you prefer and choose which ones to display.</p>
+                <h3>Is the installation process complicated?</h3>
+                <p>No, the installation process is straightforward. Just download and unzip the file and move the app to your Applications folder.</p>
+                <br>
+                <p style="color: var(--gray-dark); font-size: 0.7rem;">Since we don't have Apple approval yet, you may need to bypass Gatekeeper by right-clicking the app and selecting "Open." and choose "Open Anyway" in privacy settings.</p>
             </div>
             <div class="faq-item">
-                <h3>Will this work with my external display?</h3>
-                <p>DockWidgets works with any display configuration where your dock is visible.</p>
+                <h3>Will the widgets block my apps?</h3>
+                <p>No, the widgets are designed to be within the Dock's height hence not block any content from any app</p>
             </div>
             <div class="faq-item">
-                <h3>How do I add new widgets?</h3>
-                <p>Simply open the DockWidgets preferences and select from the available widgets to add them to your dock area.</p>
+                <h3>How do I change the location for weather?</h3>
+                <p>Simply open the DockWidgets preferences by right clicking and type in any location.</p>
             </div>
         </div>
     </section>
