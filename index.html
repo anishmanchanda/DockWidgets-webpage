@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DockSpace - Utilize Your Empty Dock Space</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="nav-container">
+        <nav>
+            <div class="logo">DockSpace</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#widgets">Widgets</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#download" class="download-btn">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your <span class="highlight">Empty Space</span> into Something Useful</h1>
+            <p>Add beautiful, functional widgets to the unused space beside your macOS dock</p>
+            <a href="#download" class="cta-button">Download Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/before-after.png" alt="Before and after showing empty dock space versus widgets">
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Why You'll Love DockSpace</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-palette"></i>
+                <h3>Beautiful Design</h3>
+                <p>Transparent widgets that blend seamlessly with your desktop</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-feather"></i>
+                <h3>Lightweight</h3>
+                <p>Minimal resource usage to keep your Mac running smoothly</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-sliders-h"></i>
+                <h3>Customizable</h3>
+                <p>Choose which widgets to display and personalize their appearance</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-puzzle-piece"></i>
+                <h3>Modular</h3>
+                <p>Add only the widgets you need, when you need them</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="widgets" class="widgets">
+        <h2>Available Widgets</h2>
+        
+        <div class="widget-showcase">
+            <div class="widget-info">
+                <h3>FlipClock</h3>
+                <p>A beautiful animated flip clock that shows the current time with a satisfying flip animation between digits.</p>
+                <ul>
+                    <li>Customizable color themes</li>
+                    <li>12 or 24-hour format</li>
+                    <li>Optional seconds display</li>
+                    <li>Smooth flip animations</li>
+                </ul>
+            </div>
+            <div class="widget-preview flipclock" >
+                <img src="images/flipclock.png" alt="Flip Clock Widget" class="widget-image">
+                <div class="video-container">
+                    <video src="videos/flipclock-animation.mp4" autoplay loop muted>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        
+        <div class="widget-showcase reverse">
+            <div class="widget-preview weather">
+                <img src="images/weather.png" alt="Weather Widget">
+            </div>
+            <div class="widget-info">
+                <h3>Weather</h3>
+                <p>Stay updated with current weather conditions and temperature for your location at a glance.</p>
+                <ul>
+                    <li>Current temperature display</li>
+                    <li>Weather condition icons</li>
+                    <li>Multiple location support</li>
+                    <li>Customizable update frequency</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="widget-showcase">
+            <div class="widget-info">
+                <h3>Music Controls</h3>
+                <p>Control your music playback without switching apps. Works with Apple Music, Spotify, and more.</p>
+                <ul>
+                    <li>Play, pause, and skip tracks</li>
+                    <li>Current track information</li>
+                    <li>Artist and album display</li>
+                    <li>Compatible with major music services</li>
+                </ul>
+            </div>
+            <div class="widget-preview music">
+                <img src="images/music.png" alt="Music Control Widget">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p>"I never realized how much empty space I had beside my dock until DockSpace filled it with useful widgets. Now I can't imagine my Mac without it!"</p>
+                <p class="author">— Sarah K., Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2>Ready to Transform Your Dock?</h2>
+        <p>Available for macOS 11.0 and later</p>
+        <a href="DockSpace.app.zip" class="download-button" download>
+            <i class="fab fa-apple"></i>
+            Download for Mac
+        </a>
+        <div class="compatibility">
+            <p><small>Compatible with macOS Big Sur, Monterey, Ventura, and Sonoma</small></p>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>Does DockSpace affect my system performance?</h3>
+                <p>No, DockSpace is designed to be lightweight and uses minimal system resources. It won't slow down your Mac.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I customize the position of the widgets?</h3>
+                <p>Yes, you can arrange widgets in any order you prefer and choose which ones to display.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Will this work with my external display?</h3>
+                <p>DockSpace works with any display configuration where your dock is visible.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I add new widgets?</h3>
+                <p>Simply open the DockSpace preferences and select from the available widgets to add them to your dock area.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">DockSpace</div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#widgets">Widgets</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe for updates and new widget releases</p>
+                    <form>
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DockSpace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
