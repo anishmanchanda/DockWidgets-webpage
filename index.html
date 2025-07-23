@@ -46,9 +46,8 @@
         <div class="widget-showcase">
             <div class="widget-info">
                 <h3>FlipClock</h3>
-                <p>A beautiful animated flip clock that shows the current time with a satisfying flip animation between digits.</p>
+                <p>A beautifully animated retro flip clock that shows the current time with a satisfying flip animation between digits.</p>
                 <ul>
-                    <li>Customizable color themes</li>
                     <li>12 or 24-hour format</li>
                     <li>Optional seconds display</li>
                     <li>Smooth flip animations</li>
@@ -80,12 +79,11 @@
         <div class="widget-showcase">
             <div class="widget-info">
                 <h3>Music Controls</h3>
-                <p>Control your music playback without switching apps. Works with Apple Music, Spotify, and more.</p>
+                <p>Control your music playback without switching apps. Works with Apple Music, Spotify</p>
                 <ul>
                     <li>Play, pause, and skip tracks</li>
                     <li>Current track information</li>
                     <li>Artist and album display</li>
-                    <li>Compatible with major music services</li>
                 </ul>
             </div>
             <div class="widget-preview music">
@@ -148,44 +146,66 @@
     </section>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/icon.png" alt="DockWidgets Icon" class="footer-icon">
-                    DockWidgets
-                </div>
-                <div class="footer-links">
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#widgets">Widgets</a></li>
-                        <li><a href="#download">Download</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h4>Stay Updated</h4>
-                    <p>Subscribe for updates and new widget releases</p>
-                    <form>
-                        <input type="email" placeholder="Your email">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
+        <div class="footer-horizontal" style="justify-content: flex-start; width: 100vw; max-width: 100vw;">
+            <div class="footer-logo" style="display: flex; align-items: center; margin-right: 40px; min-width: 260px;">
+                <img src="images/icon.png" alt="DockWidgets Icon" class="footer-icon" style="height: 120px; margin-right: 10px;">
+                <span style="font-size: 1.7rem; font-weight: bold;">DockWidgets</span>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 DockWidgets. All rights reserved.</p>
+            <div class="footer-info" style="display: flex; flex-direction: column; align-items: flex-end; margin-left: auto; margin-right: 40px;">
+                <span style="color: #fff;">&copy; 2025 DockWidgets</span>
+                <span style="color: #fff; font-size: 0.9rem;">For queries and feedback, write to: <a href="mailto:anishmanchanda2006@gmail.com" style="color: #fff;">anishmanchanda2006@gmail.com</a></span>
             </div>
         </div>
     </footer>
+
+    <style>
+    .footer-horizontal {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        color: #fff;
+        font-size: 0.9rem;
+        width: 100vw;
+        max-width: 100vw;
+    }
+    .footer-horizontal > .footer-logo {
+        margin-right: 40px;
+        min-width: 260px;
+    }
+    .footer-info {
+        margin-left: auto;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .footer-info a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer-info a:hover {
+        text-decoration: underline;
+    }
+    @media (max-width: 900px) {
+        .footer-horizontal > .footer-logo,
+        .footer-horizontal > span:not(.footer-center) {
+            margin: 0 10px;
+        }
+    }
+    @media (max-width: 600px) {
+        .footer-horizontal {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .footer-info {
+            align-items: flex-start;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 10px;
+        }
+    }
+    </style>
     
     <script src="scripts.js"></script>
 </body>

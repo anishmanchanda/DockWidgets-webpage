@@ -118,7 +118,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 5%;
+    padding: 50px 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -173,7 +173,7 @@ nav {
 
 /* Features Section */
 .features {
-    background-color: var(--gray);
+    background-color: var(--light);
     padding: 100px 5%;
     text-align: center;
 }
@@ -220,6 +220,7 @@ nav {
 
 /* Widgets Section */
 .widgets {
+    background-color: var(--gray);
     padding: 100px 5%;
 }
 
@@ -364,8 +365,8 @@ nav {
         }
 
         .footer-icon {
-            width: 32px;
-            height: 32px;
+            max-width: 100%;
+            height: auto;
             vertical-align: middle;
         }
 .quote .author {
@@ -464,14 +465,14 @@ nav {
 footer {
     background-color: var(--dark);
     color: var(--light);
-    padding: 80px 20px 20px;
+    padding: 40px 20px; /* Reduced padding */
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    margin-bottom: 60px;
+    gap: 20px; /* Reduced gap */
+    margin-bottom: 20px; /* Reduced margin */
 }
 
 .footer-logo {
@@ -543,10 +544,59 @@ footer {
 
 .copyright {
     text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px; /* Reduced padding */
     font-size: 0.9rem;
     color: var(--gray-dark);
+}
+
+.footer-horizontal {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 0.9rem;
+    width: 100%;
+}
+.footer-horizontal > .footer-logo {
+    margin-right: 40px;
+    min-width: 260px;
+    flex-shrink: 0;
+}
+.footer-horizontal > .footer-center {
+    flex: 1 1 0;
+    text-align: center;
+    margin: 0;
+    white-space: normal;
+}
+.footer-horizontal > span:not(.footer-center) {
+    margin: 0 40px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.footer-horizontal a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-horizontal a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 900px) {
+    .footer-horizontal > .footer-logo,
+    .footer-horizontal > span:not(.footer-center) {
+        margin: 0 10px;
+    }
+}
+@media (max-width: 600px) {
+    .footer-horizontal {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .footer-horizontal > .footer-center {
+        text-align: left;
+        margin: 10px 0;
+    }
 }
 
 /* Responsive Adjustments */
